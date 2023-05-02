@@ -12,24 +12,15 @@ mkdir dir2
 mkdir dir3
 mkdir dir4
 
-file1="dir1.txt"
-file2="dir2.txt"
-file3="dir3.txt"
-file4="dir4.txt"
+folders=("dir1" "dir2" "dir3" "dir4")
 
-touch $dir1
-touch $dir2
-touch $dir3
-touch $dir4
+touch ${folders[0]}/dir1.txt
+touch ${folders[1]}/dir2.txt
+touch ${folders[2]}/dir3.txt
+touch ${folders[3]}/dir4.txt
 
-files=("dir1.txt" "dir2.txt" "dir3.txt" "dir4.txt")
 
 for f in "${files[@]}; do
     touch "$f/newfile.txt"
-
-echo ${dir1[4]}
-echo ${dir2[3]}
-echo ${dir3[2]}
-echo ${dir4[1]}
 
 #end
