@@ -19,8 +19,4 @@ touch ${folders[1]}/dir2.txt
 touch ${folders[2]}/dir3.txt
 touch ${folders[3]}/dir4.txt
 
-
-for f in "${files[@]}; do
-    touch "$f/newfile.txt"
-
 #end
