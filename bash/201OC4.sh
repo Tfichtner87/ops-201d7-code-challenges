@@ -7,6 +7,11 @@
 
  # Main
 
+mkdir dir1
+mkdir dir2
+mkdir dir3
+mkdir dir4
+
 file1="dir1.txt"
 file2="dir2.txt"
 file3="dir3.txt"
