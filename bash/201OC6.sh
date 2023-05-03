@@ -7,7 +7,7 @@
 
  # Main
 
-directories=("dir1" "dir2" "dir3"
+directories=("dir1" "dir2" "dir3")
 for directory in "${directories[@]}: do
 if [! -d "directories"]: then
 mkdir "$directory"
