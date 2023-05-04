@@ -7,20 +7,9 @@
 
  # Main
 
-echo "Below is the Display Adapter"
-sudo Ishw -C display
-
-echo "Below is the Network Data"
-sudo Ishw -C network
-
-echo "Below is the CPU data"
-sudo lshw -C cpu | grep -i product
-sudo lshw -C cpu | grep -i physical
-sudo lshw -C cpu | grep -i vendor
-sudo lshw -C cpu | grep -i bus
-sudo lshw -C cpu | grep -i widthecho "Below is the RAM data"
-sudo lshw -C memory | grep -i description
-sudo lshw -C memory | grep -i physical
-sudo lshw -C memory | grep -i sizeecho "Below is the Display Adapter"
-sudo lshw -C displayecho "Below is the Network data"
-sudo lshw -C network
+echo "Computer Name:"
+sudo lshw -short | grep "system" | awk '{print $2}'echo "CPU Information:"
+sudo lshw -short | grep "processor" | awk '{print $2,$3,$4}'echo "RAM Information:"
+sudo lshw -short | grep "memory" | awk '{print $2,$3,$4,$5}'echo "Display Adapter Information:"
+sudo lshw -short | grep "display" | awk '{print $2,$3,$4,$5}'echo "Network Adapter Information:"
+sudo lshw -short | grep "network" | awk '{print $2,$3,$4,$5}'
