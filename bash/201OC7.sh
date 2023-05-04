@@ -1,4 +1,4 @@
-!/bin/bash
+#!/bin/bash
 
 # script: Ops 201 Class 04 Ops Challenge Solution
 # Author: Travis Fichtner
