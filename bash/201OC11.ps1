@@ -20,4 +20,4 @@ iex ((New-Object System.Net.WebClient).DownloadString('https://git.io/debloat'))
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All
 
 # Task 6
-Set-SmbServerConfiguration -EnableSMB1Protocol $false -Force
+Set-SmbServerConfiguration -Disable SMB1Protocol $false -Force
