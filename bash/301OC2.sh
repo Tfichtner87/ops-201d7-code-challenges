@@ -7,7 +7,7 @@
 
  # Main
 
-now=$(date"+%m-%d-%Y-%H.%M.%S")
+now=$(date "+%m-%d-%Y-%H.%M.%S")
 Filename=Log_file.txt$now
 
 echo "Creating system log in working directory"
