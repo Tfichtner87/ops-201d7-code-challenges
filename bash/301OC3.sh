@@ -14,7 +14,7 @@
  read my_var
  echo "Welcome ${my_var}!"
  echo "Enter Permissions"
- read number
+ read num
  chmod $num $file 
  echo "Welcome User"
  ls -l $file
