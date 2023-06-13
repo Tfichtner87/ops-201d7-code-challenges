@@ -23,7 +23,7 @@ elif [ $a = 2 ]
 elif [ $a = 3 ]
     then ifconfig
 else [ $a = 4 ]
-    exit 
+    exit
 fi 
 echo "Try Again Y/N"
 read x
