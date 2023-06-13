@@ -16,14 +16,16 @@ echo "2 Ping Self"
 echo "3 IP Info"
 echo "4 Exit"
 read a
-if [ $a = 1 ]
+if [ $a == 1 ]
     then echo "Hello World!"
-elif [ $a = 2 ] 
+elif [ $a == 2 ] 
     then ping -c 3 localhost
-elif [ $a = 3 ]
+elif [ $a == 3 ]
     then ifconfig
-else [ $a = 4 ]
-    exit
+elif [ $a == 4 ]
+    then exit 0
+esle
+    echo "Invalid Option"
 fi 
 echo "Try Again Y/N"
 read x
