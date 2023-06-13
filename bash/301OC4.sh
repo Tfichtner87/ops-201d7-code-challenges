@@ -7,7 +7,10 @@
 
  # Main
 
- echo "Please Choose"
+x=z 
+while [ $x = z ]
+do 
+echo "Please Choose"
 echo "1 Hello World!"
 echo "2 Ping Self"
 echo "3 IP Info"
@@ -20,7 +23,8 @@ elif [ $a = 2 ]
 elif [ $a = 3 ]
     then ifconfig
 else [ $a = 4 ]
-    Exit
+    exit 
 fi 
-
- 
+echo "Try Again Y/N"
+read x
+done
