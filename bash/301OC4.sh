@@ -25,6 +25,6 @@ elif [ $a = 3 ]
 else [ $a = 4 ]
     exit 
 fi 
-echo "Try Again Y / N"
+echo "Try Again Yes / No"
 read x
 done
