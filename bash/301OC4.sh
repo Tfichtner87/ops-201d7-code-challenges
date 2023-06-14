@@ -7,8 +7,8 @@
 
  # Main
 
-x=z 
-while [ $x = z ]
+x="y" 
+while [ $x == "y" ]
 do 
 echo "Please Choose"
 echo "1 Hello World!"
