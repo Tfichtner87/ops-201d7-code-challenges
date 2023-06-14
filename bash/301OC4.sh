@@ -22,10 +22,8 @@ elif [ $a == 2 ]
     then ping -c 3 localhost
 elif [ $a == 3 ]
     then ifconfig
-elif [ $a == 4 ]
-    then exit 0
-esle
-    echo "Invalid Option"
+else [ $a == 4 ]
+    exit 
 fi 
 echo "Try Again Y/N"
 read x
