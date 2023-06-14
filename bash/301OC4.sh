@@ -8,7 +8,7 @@
  # Main
 
 x=y 
-while [ $e = y ]
+while [ $x = y ]
 do 
 echo "Please Choose"
 echo "1 Hello World!"
@@ -25,6 +25,6 @@ elif [ $a = 3 ]
 else [ $a = 4 ]
     exit 
 fi 
-echo "Try Again Y/N"
+echo "Try Again Y / N"
 read x
 done
