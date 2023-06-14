@@ -7,8 +7,8 @@
 
  # Main
 
-x="y" 
-while [ $x == "y" ]
+e="y" 
+while [ $e == "y" ]
 do 
 echo "Please Choose"
 echo "1 Hello World!"
@@ -26,5 +26,5 @@ else [ $a == 4 ]
     exit 
 fi 
 echo "Try Again Y/N"
-read x
+read e
 done
