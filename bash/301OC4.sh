@@ -7,7 +7,7 @@
 
  # Main
 
-e=y 
+x=y 
 while [ $e = y ]
 do 
 echo "Please Choose"
@@ -25,6 +25,6 @@ elif [ $a = 3 ]
 else [ $a = 4 ]
     exit 
 fi 
-echo "Try Again Y or N"
-read e
+echo "Try Again Y/N"
+read x
 done
